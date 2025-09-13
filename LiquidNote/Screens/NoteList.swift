@@ -8,18 +8,28 @@
 import SwiftUI
 
 struct NoteList: View {
+    @State private var showNoteView: Bool = false
+    
     var body: some View {
         List {
             Section("Yesterday") {
-                VStack(alignment: .leading, spacing: 4) {
-                    Text("Work")
-                    Text("10:304 sdf")
+                Button {
+                    showNoteView = true
+                } label: {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("Work")
+                        Text("10:304 sdf")
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 }
-                .frame(maxWidth: .infinity, alignment: .leading)
+
             }
         }
         .navigationTitle("Notes")
         .navigationSubtitle("35 Notes")
+        .navigationDestination(isPresented: $showNoteView) {
+            NoteView()
+        }
     }
 }
 
