@@ -6,17 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4545A9A62E76068000A27528 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4545A9A02E76068000A27528 /* Assets.xcassets */; };
+		4545A9A72E76068000A27528 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545A9A12E76068000A27528 /* ContentView.swift */; };
+		4545A9A82E76068000A27528 /* FolderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545A9A22E76068000A27528 /* FolderList.swift */; };
+		4545A9A92E76068000A27528 /* LiquidNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545A9A32E76068000A27528 /* LiquidNoteApp.swift */; };
+		4545A9AA2E76068000A27528 /* NoteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545A9A42E76068000A27528 /* NoteList.swift */; };
+		4545A9AD2E7607C200A27528 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545A9AC2E7607C200A27528 /* NoteView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		4545A9A02E76068000A27528 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4545A9A12E76068000A27528 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4545A9A22E76068000A27528 /* FolderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderList.swift; sourceTree = "<group>"; };
+		4545A9A32E76068000A27528 /* LiquidNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidNoteApp.swift; sourceTree = "<group>"; };
+		4545A9A42E76068000A27528 /* NoteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteList.swift; sourceTree = "<group>"; };
+		4545A9AC2E7607C200A27528 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
 		455A15802E747720006DB9F6 /* LiquidNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiquidNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		455A15822E747720006DB9F6 /* LiquidNote */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = LiquidNote;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		455A157D2E747720006DB9F6 /* Frameworks */ = {
@@ -29,10 +36,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4545A9A52E76068000A27528 /* LiquidNote */ = {
+			isa = PBXGroup;
+			children = (
+				4545A9AB2E76068300A27528 /* Screens */,
+				4545A9A02E76068000A27528 /* Assets.xcassets */,
+				4545A9A12E76068000A27528 /* ContentView.swift */,
+				4545A9A32E76068000A27528 /* LiquidNoteApp.swift */,
+			);
+			path = LiquidNote;
+			sourceTree = "<group>";
+		};
+		4545A9AB2E76068300A27528 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4545A9A22E76068000A27528 /* FolderList.swift */,
+				4545A9A42E76068000A27528 /* NoteList.swift */,
+				4545A9AC2E7607C200A27528 /* NoteView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		455A15772E747720006DB9F6 = {
 			isa = PBXGroup;
 			children = (
-				455A15822E747720006DB9F6 /* LiquidNote */,
+				4545A9A52E76068000A27528 /* LiquidNote */,
 				455A15812E747720006DB9F6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,9 +87,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				455A15822E747720006DB9F6 /* LiquidNote */,
 			);
 			name = LiquidNote;
 			packageProductDependencies = (
@@ -109,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4545A9A62E76068000A27528 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4545A9A72E76068000A27528 /* ContentView.swift in Sources */,
+				4545A9AD2E7607C200A27528 /* NoteView.swift in Sources */,
+				4545A9A82E76068000A27528 /* FolderList.swift in Sources */,
+				4545A9A92E76068000A27528 /* LiquidNoteApp.swift in Sources */,
+				4545A9AA2E76068000A27528 /* NoteList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
