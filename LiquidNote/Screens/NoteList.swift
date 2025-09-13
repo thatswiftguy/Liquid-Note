@@ -9,6 +9,7 @@ import SwiftUI
 
 struct NoteList: View {
     @State private var showNoteView: Bool = false
+    @State private var searchText: String = ""
     
     var body: some View {
         List {
@@ -30,6 +31,7 @@ struct NoteList: View {
         .navigationDestination(isPresented: $showNoteView) {
             NoteView()
         }
+        .searchable(text: $searchText, prompt: "Search")
     }
 }
 

@@ -14,7 +14,7 @@ struct FolderList: View {
         NavigationStack {
             List {
                 Section("Section Title") {
-                    ForEach(["", ""], id: \.self) { _ in
+                    ForEach(["asdf", "s"], id: \.self) { _ in
                         NavigationLink(value: Screen.createFolder) {
                             Label("folder.name", systemImage: "folder")
                         }
@@ -22,7 +22,6 @@ struct FolderList: View {
                 }
             }
             .navigationTitle("Folders")
-            .searchable(text: $searchText, prompt: "Search Folders")
             .navigationDestination(for: Screen.self) { _ in
                 NoteList()
             }
@@ -41,6 +40,7 @@ struct FolderList: View {
                 }
             }
         }
+        .searchable(text: $searchText, prompt: "Search")
     }
 }
 
