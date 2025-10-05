@@ -67,7 +67,6 @@ struct NoteView: View {
         errorMessage = nil
 
         Task {
-            // Check model availability before attempting to summarize
             let model = SystemLanguageModel.default
             if case .unavailable(let reason) = model.availability {
                 await MainActor.run {
@@ -80,7 +79,6 @@ struct NoteView: View {
             }
 
             do {
-                // Use Foundation Models' LanguageModelSession to generate a summary
                 let instructions = """
                 You are a helpful writing assistant. Summarize the provided note into a single concise paragraph of medium length (about 5–7 sentences). Keep the tone neutral and informative. Do not add new facts.
                 """

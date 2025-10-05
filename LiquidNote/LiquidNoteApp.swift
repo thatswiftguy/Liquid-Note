@@ -23,9 +23,11 @@ struct LiquidNoteApp: App {
         )
 
         do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
+            let container = try ModelContainer(for: schema, configurations: [modelConfiguration])
+            return container
         } catch {
-            fatalError("Could not create ModelContainer: \(error)")
+            print("ModelContainer creation failed: \(error)")
+            fatalError("Crasshhh it")
         }
     }()
 

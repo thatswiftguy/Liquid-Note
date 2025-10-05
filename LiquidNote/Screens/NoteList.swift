@@ -181,21 +181,3 @@ struct NoteRow: View {
         .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
-
-#Preview {
-    let config = ModelConfiguration(isStoredInMemoryOnly: true)
-    let container = try! ModelContainer(for: Folder.self, Note.self, configurations: config)
-    
-    let folder = Folder(name: "Work")
-    container.mainContext.insert(folder)
-    
-    let note1 = Note(title: "Meeting Notes", content: "Discuss project timeline", folder: folder)
-    let note2 = Note(title: "", content: "Remember to send email", folder: folder)
-    container.mainContext.insert(note1)
-    container.mainContext.insert(note2)
-    
-    return NavigationStack {
-        NoteList(folder: folder)
-            .modelContainer(container)
-    }
-}

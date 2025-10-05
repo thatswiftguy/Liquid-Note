@@ -10,11 +10,11 @@ import SwiftData
 
 @Model
 final class Note {
-    var id: UUID
-    var title: String
-    var content: String
-    var createdAt: Date
-    var modifiedAt: Date
+    var id: UUID = UUID()
+    var title: String = ""
+    var content: String = ""
+    var createdAt: Date = Date()
+    var modifiedAt: Date = Date()
     var folder: Folder?
     
     init(title: String = "", content: String = "", folder: Folder? = nil) {
@@ -41,9 +41,9 @@ final class Note {
 
 @Model
 final class Folder {
-    var id: UUID
-    var name: String
-    var createdAt: Date
+    var id: UUID = UUID()
+    var name: String = ""
+    var createdAt: Date = Date()
     
     @Relationship(deleteRule: .cascade, inverse: \Note.folder)
     var notes: [Note]?
