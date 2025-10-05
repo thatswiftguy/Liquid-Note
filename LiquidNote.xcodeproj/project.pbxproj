@@ -13,6 +13,8 @@
 		4545A9A92E76068000A27528 /* LiquidNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545A9A32E76068000A27528 /* LiquidNoteApp.swift */; };
 		4545A9AA2E76068000A27528 /* NoteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545A9A42E76068000A27528 /* NoteList.swift */; };
 		4545A9AD2E7607C200A27528 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545A9AC2E7607C200A27528 /* NoteView.swift */; };
+		45B31E352E92AB8400132784 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B31E342E92AB8400132784 /* Note.swift */; };
+		45B31E3B2E92AEA700132784 /* CreateFolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B31E3A2E92AEA600132784 /* CreateFolderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		4545A9A42E76068000A27528 /* NoteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteList.swift; sourceTree = "<group>"; };
 		4545A9AC2E7607C200A27528 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
 		455A15802E747720006DB9F6 /* LiquidNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiquidNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45B31E342E92AB8400132784 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		45B31E3A2E92AEA600132784 /* CreateFolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateFolderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				4545A9A22E76068000A27528 /* FolderList.swift */,
+				45B31E3A2E92AEA600132784 /* CreateFolderView.swift */,
+				45B31E342E92AB8400132784 /* Note.swift */,
 				4545A9A42E76068000A27528 /* NoteList.swift */,
 				4545A9AC2E7607C200A27528 /* NoteView.swift */,
 			);
@@ -146,10 +152,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4545A9A72E76068000A27528 /* ContentView.swift in Sources */,
+				45B31E3B2E92AEA700132784 /* CreateFolderView.swift in Sources */,
 				4545A9AD2E7607C200A27528 /* NoteView.swift in Sources */,
 				4545A9A82E76068000A27528 /* FolderList.swift in Sources */,
 				4545A9A92E76068000A27528 /* LiquidNoteApp.swift in Sources */,
 				4545A9AA2E76068000A27528 /* NoteList.swift in Sources */,
+				45B31E352E92AB8400132784 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

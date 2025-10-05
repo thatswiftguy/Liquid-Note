@@ -16,13 +16,6 @@ import SwiftUI
  5. Search
  */
 
-enum Screen {
-    case foldersList
-    case createFolder
-    case notesList
-    case createNote
-    case search
-}
 
 struct ContentView: View {
     var body: some View {
