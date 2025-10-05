@@ -7,16 +7,6 @@
 
 import SwiftUI
 
-/*
- Screens
- 1. Folders List
- 2. Create Folders
- 3. Notes List
- 4. Create/Edit Note
- 5. Search
- */
-
-
 struct ContentView: View {
     var body: some View {
         FolderList()
