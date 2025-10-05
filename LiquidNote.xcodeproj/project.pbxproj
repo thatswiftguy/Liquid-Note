@@ -60,6 +60,7 @@
 		4545A9AB2E76068300A27528 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				45B31E3C2E92B1DB00132784 /* SummaryView.swift */,
 				4545A9A22E76068000A27528 /* FolderList.swift */,
 				45B31E3A2E92AEA600132784 /* CreateFolderView.swift */,
 				45B31E342E92AB8400132784 /* Note.swift */,
@@ -72,7 +73,6 @@
 		455A15772E747720006DB9F6 = {
 			isa = PBXGroup;
 			children = (
-				45B31E3C2E92B1DB00132784 /* SummaryView.swift */,
 				4545A9A52E76068000A27528 /* LiquidNote */,
 				455A15812E747720006DB9F6 /* Products */,
 			);
