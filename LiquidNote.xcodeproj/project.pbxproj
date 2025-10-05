@@ -49,7 +49,7 @@
 			children = (
 				45B31E3F2E92B29F00132784 /* Info.plist */,
 				45B31E3E2E92B27800132784 /* LiquidNote.entitlements */,
-				4545A9AB2E76068300A27528 /* Screens */,
+				4545A9AB2E76068300A27528 /* App */,
 				4545A9A02E76068000A27528 /* Assets.xcassets */,
 				4545A9A12E76068000A27528 /* ContentView.swift */,
 				4545A9A32E76068000A27528 /* LiquidNoteApp.swift */,
@@ -57,7 +57,7 @@
 			path = LiquidNote;
 			sourceTree = "<group>";
 		};
-		4545A9AB2E76068300A27528 /* Screens */ = {
+		4545A9AB2E76068300A27528 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				45B31E3C2E92B1DB00132784 /* SummaryView.swift */,
@@ -67,7 +67,7 @@
 				4545A9A42E76068000A27528 /* NoteList.swift */,
 				4545A9AC2E7607C200A27528 /* NoteView.swift */,
 			);
-			path = Screens;
+			path = App;
 			sourceTree = "<group>";
 		};
 		455A15772E747720006DB9F6 = {
